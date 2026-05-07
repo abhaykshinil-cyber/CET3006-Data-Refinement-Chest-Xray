@@ -29,10 +29,12 @@ Key contributions:
 │   ├── detection.py             # Error / noise sample detection
 │   ├── evaluation.py            # Metrics, calibration, confusion matrix
 │   ├── uncertainty.py           # MC-Dropout uncertainty estimation
-│   └── main.py                  # Full pipeline entry point
+│   ├── main.py                  # Full pipeline entry point
+│   └── CET3006_Research_Paper.docx  # Research paper document
 │
 ├── chest_xray_cleaning.py       # Standalone: data cleaning script
 ├── chest_xray_compare.py        # Standalone: compare baseline vs cleaned
+├── chest_xray_confusion_matrix.py
 ├── chest_xray_error_detection.py
 ├── chest_xray_evaluate.py
 ├── chest_xray_mc_dropout.py     # MC-Dropout inference
@@ -42,7 +44,6 @@ Key contributions:
 ├── chest_xray_retrain.py        # Retrain after cleaning
 ├── chest_xray_train.py          # Standalone training script
 ├── chest_xray_visualize.py      # Plot generation
-├── chest_xray_confusion_matrix.py
 │
 ├── generate_diagrams.py         # Architecture and flowchart diagram generator
 ├── diagrams_reference.md        # Diagram descriptions and figure notes
@@ -52,11 +53,23 @@ Key contributions:
 ├── verify_env.py                # Dependency verification
 │
 ├── results/
-│   ├── artifacts/               # Saved model predictions and artefacts
+│   ├── artifacts/
+│   │   ├── histories/           # Training history JSONs per cleaning regime
+│   │   ├── metrics/             # Final metrics and confusion matrix JSONs
+│   │   ├── uncertainty/         # MC-Dropout audit results
+│   │   └── paper_summary.txt
 │   ├── charts/                  # Generated metric plots
 │   └── diagrams/                # Architecture diagrams
 │
 ├── plots/                       # Additional visualisation outputs
+│   ├── plot1_loss_curves.png
+│   ├── plot2_accuracy_comparison.png
+│   ├── plot3_uncertainty_histogram.png
+│   ├── plot4_threshold_f1.png
+│   ├── plot5_multi_metrics.png
+│   ├── plot6_val_accuracy_curves.png
+│   ├── plot7_roc_pr_curves.png
+│   └── plot8_uncertainty_scatter.png
 │
 ├── figure1_flowchart.png        # Pipeline flowchart (paper figure 1)
 ├── figure2_arch_final.png       # Model architecture diagram (paper figure 2)
