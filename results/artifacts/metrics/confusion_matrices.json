@@ -1,0 +1,44 @@
+[
+  {
+    "model": "CLEAN",
+    "tn": 224,
+    "fp": 14,
+    "fn": 15,
+    "tp": 626
+  },
+  {
+    "model": "NOISY",
+    "tn": 227,
+    "fp": 11,
+    "fn": 37,
+    "tp": 604
+  },
+  {
+    "model": "WEIGHTED",
+    "tn": 219,
+    "fp": 19,
+    "fn": 22,
+    "tp": 619
+  },
+  {
+    "model": "CLEANED_10pct",
+    "tn": 209,
+    "fp": 29,
+    "fn": 8,
+    "tp": 633
+  },
+  {
+    "model": "CLEANED_20pct",
+    "tn": 221,
+    "fp": 17,
+    "fn": 35,
+    "tp": 606
+  },
+  {
+    "model": "CLEANED_30pct",
+    "tn": 215,
+    "fp": 23,
+    "fn": 18,
+    "tp": 623
+  }
+]

@@ -1,0 +1,31 @@
+# === Python ===
+__pycache__/
+*.py[cod]
+*.pyc
+*.pyo
+*.egg-info/
+
+# === Virtual Environment ===
+venv/
+.venv/
+env/
+
+# === Dataset (2.4 GB — download from Kaggle) ===
+chest_xray/
+
+# === Trained model weights (large binary files) ===
+*.pth
+best_model*.pth
+
+# === Temporary / lock files ===
+~$*
+*.tmp
+
+# === IDE & OS ===
+.idea/
+.vscode/
+*.DS_Store
+Thumbs.db
+
+# === Jupyter ===
+.ipynb_checkpoints/
